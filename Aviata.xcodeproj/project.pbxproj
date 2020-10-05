@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E7A5763149D20F2424FB8A6 /* Pods_AviataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D1A4FC10F69A70D03AAC3C /* Pods_AviataTests.framework */; };
+		7124246D25299A53008D24FD /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7124246C25299A53008D24FD /* ArticleDetailViewController.swift */; };
+		712DAF0D2529A2D400EE20B9 /* HeaderAndTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DAF0C2529A2D400EE20B9 /* HeaderAndTextView.swift */; };
+		7152C050252831930064A38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C04F252831930064A38F /* AppDelegate.swift */; };
+		7152C054252831930064A38F /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C053252831930064A38F /* MainPageViewController.swift */; };
+		7152C059252831950064A38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7152C058252831950064A38F /* Assets.xcassets */; };
+		7152C05C252831950064A38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7152C05A252831950064A38F /* LaunchScreen.storyboard */; };
+		7152C067252831950064A38F /* AviataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C066252831950064A38F /* AviataTests.swift */; };
+		7152C072252831950064A38F /* AviataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7152C071252831950064A38F /* AviataUITests.swift */; };
+		7159C8CD2529F2F2002B8637 /* SavedArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159C8CC2529F2F2002B8637 /* SavedArticleTableViewCell.swift */; };
+		71606BCF252A27EC00678475 /* SwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71606BCE252A27EB00678475 /* SwitcherView.swift */; };
+		71A81B13252833D2005CEA9F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B12252833D2005CEA9F /* MainTabBarViewController.swift */; };
+		71A81B1B252833F8005CEA9F /* SavedArtcilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B1A252833F8005CEA9F /* SavedArtcilesViewController.swift */; };
+		71A81B4425283467005CEA9F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B2A25283467005CEA9F /* Endpoints.swift */; };
+		71A81B4525283467005CEA9F /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B2C25283467005CEA9F /* NetworkResponse.swift */; };
+		71A81B4625283467005CEA9F /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B2D25283467005CEA9F /* Results.swift */; };
+		71A81B4725283467005CEA9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B2E25283467005CEA9F /* NetworkManager.swift */; };
+		71A81B4825283467005CEA9F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B2F25283467005CEA9F /* Response.swift */; };
+		71A81B4925283467005CEA9F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3025283467005CEA9F /* Router.swift */; };
+		71A81B4A25283467005CEA9F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3125283467005CEA9F /* Parser.swift */; };
+		71A81B4B25283467005CEA9F /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3225283467005CEA9F /* EndpointType.swift */; };
+		71A81B4C25283467005CEA9F /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3325283467005CEA9F /* ParseManager.swift */; };
+		71A81B4E25283467005CEA9F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3625283467005CEA9F /* AppConstants.swift */; };
+		71A81B5125283467005CEA9F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3A25283467005CEA9F /* Extension.swift */; };
+		71A81B5325283467005CEA9F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B3C25283467005CEA9F /* Observable.swift */; };
+		71A81B5725283467005CEA9F /* AppCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B4225283467005CEA9F /* AppCenter.swift */; };
+		71A81B792528362F005CEA9F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B782528362F005CEA9F /* UserManager.swift */; };
+		71A81B7E2528366C005CEA9F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B7D2528366C005CEA9F /* Keys.swift */; };
+		71A81B8925283982005CEA9F /* AlertMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A81B8825283982005CEA9F /* AlertMessageType.swift */; };
+		71BEC6A3252842CB008573A8 /* MainPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC6A2252842CB008573A8 /* MainPageModel.swift */; };
+		71BEC6AD252851A7008573A8 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC6AC252851A7008573A8 /* ArticleTableViewCell.swift */; };
+		71BEC6B225285385008573A8 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC6B125285385008573A8 /* MainPageViewModel.swift */; };
+		71EA91322529AB39004162FB /* ReadMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA91312529AB39004162FB /* ReadMoreViewController.swift */; };
+		71FAE57425299E620068D4AA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAE57225299E620068D4AA /* ScrollViewController.swift */; };
+		71FAE57525299E620068D4AA /* LoaderBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAE57325299E620068D4AA /* LoaderBaseViewController.swift */; };
+		AAFD72A64E86F97BE6E51E95 /* Pods_Aviata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AA0538CDB8543BF64FB429 /* Pods_Aviata.framework */; };
+		CEE749F3DCA754AEF88FBB7D /* Pods_Aviata_AviataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AFD241206D16971FC15EC9 /* Pods_Aviata_AviataUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7152C063252831950064A38F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7152C044252831930064A38F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7152C04B252831930064A38F;
+			remoteInfo = Aviata;
+		};
+		7152C06E252831950064A38F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7152C044252831930064A38F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7152C04B252831930064A38F;
+			remoteInfo = Aviata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BBB25FBD1FC17438E9494BE /* Pods-AviataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviataTests.release.xcconfig"; path = "Target Support Files/Pods-AviataTests/Pods-AviataTests.release.xcconfig"; sourceTree = "<group>"; };
+		13AFD241206D16971FC15EC9 /* Pods_Aviata_AviataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aviata_AviataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49544DC9784D0EDF128EBCC8 /* Pods-Aviata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviata.debug.xcconfig"; path = "Target Support Files/Pods-Aviata/Pods-Aviata.debug.xcconfig"; sourceTree = "<group>"; };
+		65E6CDE6A31E4752E0F40D96 /* Pods-Aviata-AviataUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviata-AviataUITests.release.xcconfig"; path = "Target Support Files/Pods-Aviata-AviataUITests/Pods-Aviata-AviataUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D464EF6D14C28DE205F4033 /* Pods-Aviata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviata.release.xcconfig"; path = "Target Support Files/Pods-Aviata/Pods-Aviata.release.xcconfig"; sourceTree = "<group>"; };
+		7124246C25299A53008D24FD /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		712DAF0C2529A2D400EE20B9 /* HeaderAndTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndTextView.swift; sourceTree = "<group>"; };
+		7152C04C252831930064A38F /* Aviata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aviata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7152C04F252831930064A38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7152C053252831930064A38F /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		7152C058252831950064A38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7152C05B252831950064A38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7152C05D252831950064A38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7152C062252831950064A38F /* AviataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7152C066252831950064A38F /* AviataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviataTests.swift; sourceTree = "<group>"; };
+		7152C068252831950064A38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7152C06D252831950064A38F /* AviataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7152C071252831950064A38F /* AviataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviataUITests.swift; sourceTree = "<group>"; };
+		7152C073252831950064A38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7159C8CC2529F2F2002B8637 /* SavedArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArticleTableViewCell.swift; sourceTree = "<group>"; };
+		71606BCE252A27EB00678475 /* SwitcherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitcherView.swift; sourceTree = "<group>"; };
+		71A81B12252833D2005CEA9F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		71A81B1A252833F8005CEA9F /* SavedArtcilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArtcilesViewController.swift; sourceTree = "<group>"; };
+		71A81B2A25283467005CEA9F /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		71A81B2C25283467005CEA9F /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		71A81B2D25283467005CEA9F /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		71A81B2E25283467005CEA9F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		71A81B2F25283467005CEA9F /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		71A81B3025283467005CEA9F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		71A81B3125283467005CEA9F /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		71A81B3225283467005CEA9F /* EndpointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		71A81B3325283467005CEA9F /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
+		71A81B3625283467005CEA9F /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		71A81B3A25283467005CEA9F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		71A81B3C25283467005CEA9F /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		71A81B4225283467005CEA9F /* AppCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCenter.swift; sourceTree = "<group>"; };
+		71A81B782528362F005CEA9F /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		71A81B7D2528366C005CEA9F /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		71A81B8825283982005CEA9F /* AlertMessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessageType.swift; sourceTree = "<group>"; };
+		71BEC6A2252842CB008573A8 /* MainPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageModel.swift; sourceTree = "<group>"; };
+		71BEC6AC252851A7008573A8 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		71BEC6B125285385008573A8 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		71EA91312529AB39004162FB /* ReadMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoreViewController.swift; sourceTree = "<group>"; };
+		71FAE57225299E620068D4AA /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		71FAE57325299E620068D4AA /* LoaderBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderBaseViewController.swift; sourceTree = "<group>"; };
+		83AA0538CDB8543BF64FB429 /* Pods_Aviata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aviata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D1A4FC10F69A70D03AAC3C /* Pods_AviataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A936B228E7B15F0A895E86B1 /* Pods-Aviata-AviataUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aviata-AviataUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aviata-AviataUITests/Pods-Aviata-AviataUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6F5130686D5A31A72485ECB /* Pods-AviataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviataTests.debug.xcconfig"; path = "Target Support Files/Pods-AviataTests/Pods-AviataTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7152C049252831930064A38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFD72A64E86F97BE6E51E95 /* Pods_Aviata.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C05F252831950064A38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7A5763149D20F2424FB8A6 /* Pods_AviataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C06A252831950064A38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE749F3DCA754AEF88FBB7D /* Pods_Aviata_AviataUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7152C043252831930064A38F = {
+			isa = PBXGroup;
+			children = (
+				7152C04E252831930064A38F /* Aviata */,
+				7152C065252831950064A38F /* AviataTests */,
+				7152C070252831950064A38F /* AviataUITests */,
+				7152C04D252831930064A38F /* Products */,
+				8CF4D8637339EDBCE0DFDE78 /* Pods */,
+				748053CA8028A687BC593D1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7152C04D252831930064A38F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7152C04C252831930064A38F /* Aviata.app */,
+				7152C062252831950064A38F /* AviataTests.xctest */,
+				7152C06D252831950064A38F /* AviataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7152C04E252831930064A38F /* Aviata */ = {
+			isa = PBXGroup;
+			children = (
+				7152C04F252831930064A38F /* AppDelegate.swift */,
+				71A81B2725283467005CEA9F /* ApplicationHandeler */,
+				71A81B9025283B05005CEA9F /* TabBar */,
+				71A81B9325283B2F005CEA9F /* MainPage */,
+				71FAE57A25299F840068D4AA /* ArticleDetail */,
+				71A81B9725283BA7005CEA9F /* SavedArtcles */,
+				7152C058252831950064A38F /* Assets.xcassets */,
+				7152C05A252831950064A38F /* LaunchScreen.storyboard */,
+				7152C05D252831950064A38F /* Info.plist */,
+			);
+			path = Aviata;
+			sourceTree = "<group>";
+		};
+		7152C065252831950064A38F /* AviataTests */ = {
+			isa = PBXGroup;
+			children = (
+				7152C066252831950064A38F /* AviataTests.swift */,
+				7152C068252831950064A38F /* Info.plist */,
+			);
+			path = AviataTests;
+			sourceTree = "<group>";
+		};
+		7152C070252831950064A38F /* AviataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7152C071252831950064A38F /* AviataUITests.swift */,
+				7152C073252831950064A38F /* Info.plist */,
+			);
+			path = AviataUITests;
+			sourceTree = "<group>";
+		};
+		71A81B2725283467005CEA9F /* ApplicationHandeler */ = {
+			isa = PBXGroup;
+			children = (
+				71FAE57925299F330068D4AA /* BaseViews */,
+				71A81B2925283467005CEA9F /* NetworkManager */,
+				71A81B3425283467005CEA9F /* Constants */,
+				71A81B3A25283467005CEA9F /* Extension.swift */,
+				71A81B3C25283467005CEA9F /* Observable.swift */,
+				71A81B4225283467005CEA9F /* AppCenter.swift */,
+			);
+			path = ApplicationHandeler;
+			sourceTree = "<group>";
+		};
+		71A81B2925283467005CEA9F /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B782528362F005CEA9F /* UserManager.swift */,
+				71A81B2A25283467005CEA9F /* Endpoints.swift */,
+				71A81B2B25283467005CEA9F /* NetworkManager */,
+				71A81B3325283467005CEA9F /* ParseManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		71A81B2B25283467005CEA9F /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B2C25283467005CEA9F /* NetworkResponse.swift */,
+				71A81B2D25283467005CEA9F /* Results.swift */,
+				71A81B2E25283467005CEA9F /* NetworkManager.swift */,
+				71A81B2F25283467005CEA9F /* Response.swift */,
+				71A81B3025283467005CEA9F /* Router.swift */,
+				71A81B3125283467005CEA9F /* Parser.swift */,
+				71A81B3225283467005CEA9F /* EndpointType.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		71A81B3425283467005CEA9F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B7D2528366C005CEA9F /* Keys.swift */,
+				71A81B8825283982005CEA9F /* AlertMessageType.swift */,
+				71A81B3625283467005CEA9F /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		71A81B9025283B05005CEA9F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B12252833D2005CEA9F /* MainTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		71A81B9325283B2F005CEA9F /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B9625283B6D005CEA9F /* Model */,
+				71A81B9525283B64005CEA9F /* View */,
+				71A81B9425283B5B005CEA9F /* ViewModel */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		71A81B9425283B5B005CEA9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71BEC6B125285385008573A8 /* MainPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71A81B9525283B64005CEA9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71BEC6AB25285188008573A8 /* views */,
+				7152C053252831930064A38F /* MainPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71A81B9625283B6D005CEA9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71BEC6A2252842CB008573A8 /* MainPageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71A81B9725283BA7005CEA9F /* SavedArtcles */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B9825283BC5005CEA9F /* Model */,
+				71A81B9925283BCD005CEA9F /* View */,
+				71A81B9A25283BDD005CEA9F /* ViewModel */,
+			);
+			path = SavedArtcles;
+			sourceTree = "<group>";
+		};
+		71A81B9825283BC5005CEA9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71A81B9925283BCD005CEA9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71A81B1A252833F8005CEA9F /* SavedArtcilesViewController.swift */,
+				7159C8CC2529F2F2002B8637 /* SavedArticleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71A81B9A25283BDD005CEA9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71BEC6AB25285188008573A8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				71BEC6AC252851A7008573A8 /* ArticleTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		71FAE57925299F330068D4AA /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				71606BCE252A27EB00678475 /* SwitcherView.swift */,
+				71FAE57325299E620068D4AA /* LoaderBaseViewController.swift */,
+				71FAE57225299E620068D4AA /* ScrollViewController.swift */,
+				712DAF0C2529A2D400EE20B9 /* HeaderAndTextView.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		71FAE57A25299F840068D4AA /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7124246C25299A53008D24FD /* ArticleDetailViewController.swift */,
+				71EA91312529AB39004162FB /* ReadMoreViewController.swift */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		748053CA8028A687BC593D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AA0538CDB8543BF64FB429 /* Pods_Aviata.framework */,
+				13AFD241206D16971FC15EC9 /* Pods_Aviata_AviataUITests.framework */,
+				92D1A4FC10F69A70D03AAC3C /* Pods_AviataTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF4D8637339EDBCE0DFDE78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49544DC9784D0EDF128EBCC8 /* Pods-Aviata.debug.xcconfig */,
+				6D464EF6D14C28DE205F4033 /* Pods-Aviata.release.xcconfig */,
+				A936B228E7B15F0A895E86B1 /* Pods-Aviata-AviataUITests.debug.xcconfig */,
+				65E6CDE6A31E4752E0F40D96 /* Pods-Aviata-AviataUITests.release.xcconfig */,
+				D6F5130686D5A31A72485ECB /* Pods-AviataTests.debug.xcconfig */,
+				0BBB25FBD1FC17438E9494BE /* Pods-AviataTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7152C04B252831930064A38F /* Aviata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7152C076252831950064A38F /* Build configuration list for PBXNativeTarget "Aviata" */;
+			buildPhases = (
+				3A4B0BF70FEC9B6D4DB0A21B /* [CP] Check Pods Manifest.lock */,
+				7152C048252831930064A38F /* Sources */,
+				7152C049252831930064A38F /* Frameworks */,
+				7152C04A252831930064A38F /* Resources */,
+				35FB1DE6BB81015C99B68B90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aviata;
+			productName = Aviata;
+			productReference = 7152C04C252831930064A38F /* Aviata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7152C061252831950064A38F /* AviataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7152C079252831950064A38F /* Build configuration list for PBXNativeTarget "AviataTests" */;
+			buildPhases = (
+				6B3A48DBE18AFE6FFFC53423 /* [CP] Check Pods Manifest.lock */,
+				7152C05E252831950064A38F /* Sources */,
+				7152C05F252831950064A38F /* Frameworks */,
+				7152C060252831950064A38F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7152C064252831950064A38F /* PBXTargetDependency */,
+			);
+			name = AviataTests;
+			productName = AviataTests;
+			productReference = 7152C062252831950064A38F /* AviataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7152C06C252831950064A38F /* AviataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7152C07C252831950064A38F /* Build configuration list for PBXNativeTarget "AviataUITests" */;
+			buildPhases = (
+				BA72DCB7B18C8E80EA529578 /* [CP] Check Pods Manifest.lock */,
+				7152C069252831950064A38F /* Sources */,
+				7152C06A252831950064A38F /* Frameworks */,
+				7152C06B252831950064A38F /* Resources */,
+				E95D34CC240E3C780DC81303 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7152C06F252831950064A38F /* PBXTargetDependency */,
+			);
+			name = AviataUITests;
+			productName = AviataUITests;
+			productReference = 7152C06D252831950064A38F /* AviataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7152C044252831930064A38F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7152C04B252831930064A38F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7152C061252831950064A38F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7152C04B252831930064A38F;
+					};
+					7152C06C252831950064A38F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7152C04B252831930064A38F;
+					};
+				};
+			};
+			buildConfigurationList = 7152C047252831930064A38F /* Build configuration list for PBXProject "Aviata" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7152C043252831930064A38F;
+			productRefGroup = 7152C04D252831930064A38F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7152C04B252831930064A38F /* Aviata */,
+				7152C061252831950064A38F /* AviataTests */,
+				7152C06C252831950064A38F /* AviataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7152C04A252831930064A38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7152C05C252831950064A38F /* LaunchScreen.storyboard in Resources */,
+				7152C059252831950064A38F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C060252831950064A38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C06B252831950064A38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35FB1DE6BB81015C99B68B90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviata/Pods-Aviata-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviata/Pods-Aviata-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aviata/Pods-Aviata-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A4B0BF70FEC9B6D4DB0A21B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aviata-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B3A48DBE18AFE6FFFC53423 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AviataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA72DCB7B18C8E80EA529578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aviata-AviataUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95D34CC240E3C780DC81303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviata-AviataUITests/Pods-Aviata-AviataUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aviata-AviataUITests/Pods-Aviata-AviataUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aviata-AviataUITests/Pods-Aviata-AviataUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7152C048252831930064A38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BEC6B225285385008573A8 /* MainPageViewModel.swift in Sources */,
+				71A81B4925283467005CEA9F /* Router.swift in Sources */,
+				71A81B4725283467005CEA9F /* NetworkManager.swift in Sources */,
+				71A81B13252833D2005CEA9F /* MainTabBarViewController.swift in Sources */,
+				71A81B7E2528366C005CEA9F /* Keys.swift in Sources */,
+				7152C054252831930064A38F /* MainPageViewController.swift in Sources */,
+				71A81B4525283467005CEA9F /* NetworkResponse.swift in Sources */,
+				71606BCF252A27EC00678475 /* SwitcherView.swift in Sources */,
+				71FAE57425299E620068D4AA /* ScrollViewController.swift in Sources */,
+				71A81B4825283467005CEA9F /* Response.swift in Sources */,
+				7152C050252831930064A38F /* AppDelegate.swift in Sources */,
+				71A81B5325283467005CEA9F /* Observable.swift in Sources */,
+				71BEC6AD252851A7008573A8 /* ArticleTableViewCell.swift in Sources */,
+				71A81B4C25283467005CEA9F /* ParseManager.swift in Sources */,
+				71A81B8925283982005CEA9F /* AlertMessageType.swift in Sources */,
+				71A81B4B25283467005CEA9F /* EndpointType.swift in Sources */,
+				7159C8CD2529F2F2002B8637 /* SavedArticleTableViewCell.swift in Sources */,
+				71A81B5125283467005CEA9F /* Extension.swift in Sources */,
+				71FAE57525299E620068D4AA /* LoaderBaseViewController.swift in Sources */,
+				71A81B4E25283467005CEA9F /* AppConstants.swift in Sources */,
+				71BEC6A3252842CB008573A8 /* MainPageModel.swift in Sources */,
+				71A81B4A25283467005CEA9F /* Parser.swift in Sources */,
+				71A81B5725283467005CEA9F /* AppCenter.swift in Sources */,
+				71EA91322529AB39004162FB /* ReadMoreViewController.swift in Sources */,
+				71A81B4425283467005CEA9F /* Endpoints.swift in Sources */,
+				71A81B4625283467005CEA9F /* Results.swift in Sources */,
+				712DAF0D2529A2D400EE20B9 /* HeaderAndTextView.swift in Sources */,
+				7124246D25299A53008D24FD /* ArticleDetailViewController.swift in Sources */,
+				71A81B792528362F005CEA9F /* UserManager.swift in Sources */,
+				71A81B1B252833F8005CEA9F /* SavedArtcilesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C05E252831950064A38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7152C067252831950064A38F /* AviataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7152C069252831950064A38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7152C072252831950064A38F /* AviataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7152C064252831950064A38F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7152C04B252831930064A38F /* Aviata */;
+			targetProxy = 7152C063252831950064A38F /* PBXContainerItemProxy */;
+		};
+		7152C06F252831950064A38F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7152C04B252831930064A38F /* Aviata */;
+			targetProxy = 7152C06E252831950064A38F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7152C05A252831950064A38F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7152C05B252831950064A38F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7152C074252831950064A38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7152C075252831950064A38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7152C077252831950064A38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49544DC9784D0EDF128EBCC8 /* Pods-Aviata.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XCL5KL9AT;
+				INFOPLIST_FILE = Aviata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.Aviata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7152C078252831950064A38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D464EF6D14C28DE205F4033 /* Pods-Aviata.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XCL5KL9AT;
+				INFOPLIST_FILE = Aviata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.Aviata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7152C07A252831950064A38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F5130686D5A31A72485ECB /* Pods-AviataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AviataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.AviataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aviata.app/Aviata";
+			};
+			name = Debug;
+		};
+		7152C07B252831950064A38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBB25FBD1FC17438E9494BE /* Pods-AviataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AviataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.AviataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aviata.app/Aviata";
+			};
+			name = Release;
+		};
+		7152C07D252831950064A38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A936B228E7B15F0A895E86B1 /* Pods-Aviata-AviataUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AviataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.AviataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aviata;
+			};
+			name = Debug;
+		};
+		7152C07E252831950064A38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E6CDE6A31E4752E0F40D96 /* Pods-Aviata-AviataUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AviataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bakosya.AviataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aviata;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7152C047252831930064A38F /* Build configuration list for PBXProject "Aviata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7152C074252831950064A38F /* Debug */,
+				7152C075252831950064A38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7152C076252831950064A38F /* Build configuration list for PBXNativeTarget "Aviata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7152C077252831950064A38F /* Debug */,
+				7152C078252831950064A38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7152C079252831950064A38F /* Build configuration list for PBXNativeTarget "AviataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7152C07A252831950064A38F /* Debug */,
+				7152C07B252831950064A38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7152C07C252831950064A38F /* Build configuration list for PBXNativeTarget "AviataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7152C07D252831950064A38F /* Debug */,
+				7152C07E252831950064A38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7152C044252831930064A38F /* Project object */;
+}
