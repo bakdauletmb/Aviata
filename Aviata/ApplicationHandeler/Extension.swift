@@ -127,7 +127,7 @@ extension Double {
 }
 extension String {
     var toURL : URL {
-        return URL(string: self)!
+        return URL(string: self) ?? URL(string: "http://bytepace.com/ru/blog/viper-swift")
     }
     var utfData: Data {
         return Data(utf8)
